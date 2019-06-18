@@ -1,0 +1,19 @@
+#Heading {
+text-align: center;
+}
+
+#canvas {
+  background-color: #030f21;
+}
+
+#DrawInput {
+  width: 500px;
+}
+
+.CanvasSect {
+  background-color: green;
+}
+
+.MainSect {
+  margin-left: 25px;
+}

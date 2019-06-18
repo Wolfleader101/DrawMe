@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DrawMe</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col">
+      <h1 id="Heading">Draw.Me</h1>
+      <p id="Heading">An automated drawing tool</p>
+      <div class="MainSect">
+        <br>
+        <p>What do you want to draw?</p>
+        <form class="" action="index.html" onsubmit="SubmitInput(); return false">
+          <input id="DrawInput" type="text" name="" placeholder="Need an idea? Type 'Draw a Circle!'">
+          <input type="submit" name="" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="col CanvasSect">
+      <canvas id="canvas" width="1280" height="600"></canvas>
+    </div>
+  </div>
+</body>
+<script src="scripts/main.js" charset="utf-8"></script>
+<script src="scripts/square.js" charset="utf-8"></script>
+<script src="scripts/input.js" charset="utf-8"></script>
+</html>

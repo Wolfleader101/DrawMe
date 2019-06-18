@@ -1,0 +1,14 @@
+{
+  "name": "draw.me",
+  "version": "0.0.1",
+  "description": "a program to draw things on command!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wolfleader101",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
