@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Get Automation working
 
-## 0.1.0 - 2019-06-18
+## [0.1.0] - 2019-06-18
 ### Added
 - Added all files need
 
