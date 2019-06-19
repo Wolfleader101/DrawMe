@@ -12,6 +12,7 @@ function SubmitInput() {
 FilteredWords.map(v => v.toLowerCase());
 
   // check what the command is (e.g draw) then the argument (e.g square)
+  
     var Usercmds = FilteredWords.filter(x => commands.includes(x));
     console.log(Usercmds);
 
@@ -33,7 +34,7 @@ FilteredWords.map(v => v.toLowerCase());
 let command, argument;
 
 for(const word of arrayFromBefore) {
-    if(commands.includes(word)) command = word;
+    if(commands.includes(word)) command = word;g
     if(args.includes(word) && command) argument = word;
 
     if(command && argument) {
