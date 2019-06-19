@@ -1,6 +1,6 @@
 function SubmitInput() {
   let Input = document.getElementById("DrawInput").value;
-  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy'];
+  const acceptedWords = ['Draw', 'Create', 'Make', 'Square', 'Destroy'];
   const commands = ['draw', 'create', 'make', 'destroy'];
   const arguments = ['square'];
 
