@@ -7,19 +7,27 @@ function SubmitInput() {
 
   // Filter out the useless words. FilteredWords is now the words we keep
   FilteredWords = Input.split(' ').filter(word => acceptedWords.includes(word));
+  console.log("%cThe Filtered words:", "color: aqua;");  
   console.log(FilteredWords); // make sure its working
 
-  // check what the command is (e.g draw) then the argument (e.g square)
-  
+  // check the users commands (e.g draw)
     var Usercmds = FilteredWords.filter(x => commands.includes(x));
-    console.log(Usercmds);
+    console.log("\n" + "%cThe User's Commands", "color: aqua;");
+    console.log(Usercmds); // make sure its working
 
+  // check the users arguments (e.g square)
+  var UserArguments = FilteredWords.filter(x => arguments.includes(x));
+  console.log("\n" + "%cThe User's Arguements", "color: aqua;");
+  console.log(UserArguments); // make sure its working
+    
   //check for first command then set variable
   //check for first argument set variable
     //run the command (e.g Draw the square)
   //Now delete those words from array using  .shift()
-  //loop until no words left.
   //Each command needs an argument and aeach argument requires a command otherwise delete
+  //if the command has another command after it. delete it.
+  //loop until no words left.
+  
 
 }
 
