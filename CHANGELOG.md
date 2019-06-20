@@ -14,8 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logging of the Input, Commands and Arguments with color
 
 ## [0.1.1] - 2019-06-20
-### Depcrecated
+### Removed
 - Filtered words being converted to lowercase, now input is just set to lowercase
+- Drawing a square without input
 
 
 
@@ -23,8 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added all files need
 
-### Depcrecated
+### Deprecated
 - Drawing a square without input
+- Filtered words being converted to lowercase, now input is just set to lowercase
 
 
 
