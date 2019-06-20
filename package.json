@@ -1,6 +1,6 @@
 {
   "name": "draw.me",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a program to draw things on command!",
   "main": "app.js",
   "scripts": {
