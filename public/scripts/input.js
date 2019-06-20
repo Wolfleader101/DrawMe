@@ -1,15 +1,13 @@
 function SubmitInput() {
   let Input = document.getElementById("DrawInput").value;
-  const acceptedWords = ['Draw', 'Create', 'Make', 'Square', 'Destroy'];
+  Input = Input.toLowerCase();
+  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy'];
   const commands = ['draw', 'create', 'make', 'destroy'];
   const arguments = ['square'];
 
   // Filter out the useless words. FilteredWords is now the words we keep
   FilteredWords = Input.split(' ').filter(word => acceptedWords.includes(word));
   console.log(FilteredWords); // make sure its working
-
-//convert filtered words to lowercase
-FilteredWords.map(v => v.toLowerCase());
 
   // check what the command is (e.g draw) then the argument (e.g square)
   
