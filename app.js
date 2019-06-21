@@ -3,9 +3,10 @@
 =      DrawMe       =
 =        By         =
 =   Wolfleader101   =
-=     V 0.0.1       =
+=                   =
 =====================
 */
+const colors = require('colors');
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -16,4 +17,8 @@ app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/public/index.htm
 app.use(express.static(path.join(__dirname, 'public')));
 app.listen(`${port}`);
 
-console.log(`Server up and ready!\nServer on port ${port}`);
+console.log(`Server up and ready!\nServer on port ${port}`.green.bold);
+
+console.log(`To access DrawMe go to http://localhost:${port}`.bold.magenta);
+console.log("Have fun!".rainbow);
+
