@@ -8,10 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Get Automation working
 
+## [0.1.3] - 2019-06-18
+### Added
+- Statements to determine what the user wants
+- Startup with color
+- New files
+
+### Deprecated
+- Square.js has moved locations
+
+
+
 ## [0.1.2] - 2019-06-18
 ### Added
 - User Arguments
 - Logging of the Input, Commands and Arguments with color
+
+
 
 ## [0.1.1] - 2019-06-20
 ### Removed
