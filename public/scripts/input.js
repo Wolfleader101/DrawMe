@@ -1,9 +1,11 @@
 function SubmitInput() {
   let Input = document.getElementById("DrawInput").value;
   Input = Input.toLowerCase();
-  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy'];
-  const commands = ['draw', 'create', 'make', 'destroy'];
+  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy', 'delete'];
+  const commands = ['draw', 'create', 'make', 'destroy', 'delete'];
   const arguments = ['square', 'circle', 'box'];
+
+  
 
   // Filter out the useless words. FilteredWords is now the words we keep
   FilteredWords = Input.split(' ').filter(word => acceptedWords.includes(word));
@@ -21,7 +23,6 @@ function SubmitInput() {
   console.log(UserArgument); // make sure its working
     
   // Run loop until all commands done
-  for(i = 0; i < Usercmds.length; i++) {
     for(cmd of Usercmds) {
 
       // Check if User Commands are create
@@ -39,7 +40,6 @@ function SubmitInput() {
         console.log('ERROR USER COMMAND NOT RECOGNIZED');
       }
     }
-  }
 
 /*
     // Check if User Commands are create
