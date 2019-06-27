@@ -22,26 +22,24 @@ function SubmitInput() {
     
   // Run loop until all commands done
   for(i = 0; i < Usercmds.length; i++) {
+    for(cmd of Usercmds) {
 
-    // Check if User Commands are create
-    if (Usercmds.includes(Create) == true) {
-      console.log("Create")
-      // check the argument
+      // Check if User Commands are create
+      if(Create.includes(cmd)) {
+        // check the argument
+        console.log("create")
 
-    // if they aren't check if they are destroy
-    } else if(Usercmds.includes(Destroy) == true) {
-      //check the argument
-      console.log("Destroy")
+      // if they aren't check if they are destroy
+      } else if(Destroy.includes(cmd)) {
+        //check the argument
+        console.log("Destroy")
+
+      } else {
+        alert('ERROR USER COMMAND NOT RECOGNIZED')
+        console.log('ERROR USER COMMAND NOT RECOGNIZED');
+      }
     }
-    else {
-      alert('ERROR USER COMMAND NOT RECOGINIZED')
-      console.log('ERROR USER COMMAND NOT RECOGINIZED');
-    }
-
-
-
-
-
+  }
 
 /*
     // Check if User Commands are create
@@ -67,8 +65,6 @@ function SubmitInput() {
   //if the command has another command after it. delete it.
   //loop until no words left.
   
-
-}
 
 
 
