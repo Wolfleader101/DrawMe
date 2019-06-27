@@ -1,4 +1,4 @@
-const Shape = ['square', 'circle'];
+const Shape = ['square', 'circle', 'box'];
 
 
 function DetermineShape () {

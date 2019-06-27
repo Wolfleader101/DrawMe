@@ -24,6 +24,27 @@ function SubmitInput() {
   for(i = 0; i < Usercmds.length; i++) {
 
     // Check if User Commands are create
+    if (Usercmds.includes(Create) == true) {
+      console.log("Create")
+      // check the argument
+
+    // if they aren't check if they are destroy
+    } else if(Usercmds.includes(Destroy) == true) {
+      //check the argument
+      console.log("Destroy")
+    }
+    else {
+      alert('ERROR USER COMMAND NOT RECOGINIZED')
+      console.log('ERROR USER COMMAND NOT RECOGINIZED');
+    }
+
+
+
+
+
+
+/*
+    // Check if User Commands are create
     if(Usercmds.filter(z => Create.includes(z))) {
       // check the argument
 
@@ -36,7 +57,7 @@ function SubmitInput() {
       alert('ERROR USER COMMAND NOT RECOGINIZED')
       console.log('ERROR USER COMMAND NOT RECOGINIZED');
     }
-
+    */
   }
 
   
