@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Get Automation working
 
+## [0.1.4] - 2019-06-18
+### Added
+- re-wrote checking of User commands
+- added input_old.js for OLD js code that was Deprecated
+
+### Removed
+- Useless old code from input.js
+
 ## [0.1.3] - 2019-06-18
 ### Added
 - Statements to determine what the user wants

@@ -38,7 +38,6 @@ function SubmitInput() {
         console.log('ERROR USER COMMAND NOT RECOGNIZED');
       }
     }
-
    //run the command (e.g Draw the square)
   //Now delete those words from array using  .shift()
   //Each command needs an argument and aeach argument requires a command otherwise delete
