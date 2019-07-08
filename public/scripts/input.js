@@ -1,7 +1,10 @@
+var UserArgument;
+var Usercmds;
+
 function SubmitInput() {
   let Input = document.getElementById("DrawInput").value;
   Input = Input.toLowerCase();
-  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy', 'delete'];
+  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy', 'delete', 'circle'];
   const commands = ['draw', 'create', 'make', 'destroy', 'delete'];
   const arguments = ['square', 'circle', 'box'];
 
@@ -13,12 +16,12 @@ function SubmitInput() {
   console.log(FilteredWords); // make sure its working
 
   // check the users commands (e.g draw)
-    var Usercmds = FilteredWords.filter(x => commands.includes(x));
+  Usercmds = FilteredWords.filter(x => commands.includes(x));
     console.log("\n" + "%cThe User's Commands", "color: aqua;");
     console.log(Usercmds); // make sure its working
 
   // check the users arguments (e.g square)
-  var UserArgument = FilteredWords.filter(y => arguments.includes(y));
+  UserArgument = FilteredWords.filter(y => arguments.includes(y));
   console.log("\n" + "%cThe User's Arguements", "color: aqua;");
   console.log(UserArgument); // make sure its working
     
@@ -28,10 +31,12 @@ function SubmitInput() {
       // Check if User Commands are create
       if(Create.includes(cmd)) {
         // check the argument
-
+        DetermineArgument();
+        
       // if they aren't check if they are destroy
       } else if(Destroy.includes(cmd)) {
         //check the argument
+        DetermineArgument();
 
       } else {
         alert('ERROR USER COMMAND NOT RECOGNIZED')
