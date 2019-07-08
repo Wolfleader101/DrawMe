@@ -10,17 +10,31 @@ class Square {
     this.width = width;
   }
 
-/* Getter (not needed)
-  get Draw() {
-    return this.DrawSquare();
-  }
-*/
   //Method
-  DrawSquare() {
-    Context.rect(this.x, this.y, this.width, this.height);
+  Draw() {
     Context.fillStyle = this.colour;
-    Context.fill();
+    Context.fillRect(this.x, this.y, this.width, this.height);
   }
 }
 
-let square = new Square("red", 25, 25, 100, 100);
+class Rectange {
+  constructor(colour, x, y, height, width) {
+    this.colour = colour;
+    this.x = x;
+    this.y = y;
+    this.height = height;
+    this.width = width;
+  }
+
+  //Method
+  Draw() {
+    Context.fillStyle = this.colour;
+    Context.fillRect(this.x, this.y, this.width, this.height);
+  }
+}
+
+const ShapeObjects = {
+  square: new Square("red", 25, 25, 100, 100),
+  rectangle: new Rectange("blue", 125, 200, 100, 150)
+};
+

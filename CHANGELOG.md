@@ -12,6 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix bugs
 - Clean up code
 
+## [0.3.0] - 2019-07-07
+### Added
+- Automation 100% working
+- Fixed bugs
+- Got squares and rectangles working
+- Got color working
+
+
 ## [0.2.0] - 2019-07-07
 ### Added
 -Fixed Changelog

@@ -1,14 +1,15 @@
+// Defined so other scripts can access these variables
 var UserArgument;
 var Usercmds;
+var arguments;
+var commands;
 
 function SubmitInput() {
   let Input = document.getElementById("DrawInput").value;
   Input = Input.toLowerCase();
-  const acceptedWords = ['draw', 'create', 'make', 'square', 'destroy', 'delete', 'circle'];
-  const commands = ['draw', 'create', 'make', 'destroy', 'delete'];
-  const arguments = ['square', 'circle', 'box'];
-
-
+  commands = ['draw', 'create', 'make', 'destroy', 'delete'];
+  arguments = ['square', 'circle', 'rectangle'];
+  const acceptedWords = commands.concat(arguments);
 
   // Filter out the useless words. FilteredWords is now the words we keep
   FilteredWords = Input.split(' ').filter(word => acceptedWords.includes(word));
@@ -22,7 +23,7 @@ function SubmitInput() {
 
   // check the users arguments (e.g square)
   UserArgument = FilteredWords.filter(y => arguments.includes(y));
-  console.log("\n" + "%cThe User's Arguements", "color: aqua;");
+  console.log("\n" + "%cThe User's Arguments", "color: aqua;");
   console.log(UserArgument); // make sure its working
     
   // Run loop until all commands done

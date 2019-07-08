@@ -1,21 +1,12 @@
-const Shape = ['square', 'circle', 'box'];
-
-const sSquare = "square";
-const sCircle = "circle";
-
+const shapes = ['square', 'circle', 'rectangle'];
 function DetermineArgument() {
 
   // Run loop to check all arugments
   for(args of UserArgument) {
 
      //check the users shape
-    if (sSquare.includes(args)) {
-
-      console.log("Square")
-
-    } else if (sCircle.includes(args)) {
-
-      console.log("Circle")
+    if (shapes.includes(args)) {
+      ShapeObjects[args].Draw();
 
     } else {
 
