@@ -59,4 +59,3 @@ const ShapeObjects = {
   rectangle: new Rectange("blue", 125, 200, 100, 150),
   circle: new Circle("orange", 500, 350, 100, 0, 2)
 };
-

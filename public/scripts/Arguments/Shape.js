@@ -1,4 +1,5 @@
 const shapes = ['square', 'circle', 'rectangle'];
+
 function DetermineArgument() {
 
   // Run loop to check all arugments

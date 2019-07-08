@@ -40,7 +40,7 @@ function SubmitInput() {
         DetermineArgument();
 
       } else {
-        alert('ERROR USER COMMAND NOT RECOGNIZED')
+        alert('ERROR USER COMMAND NOT RECOGNIZED');
         console.log('ERROR USER COMMAND NOT RECOGNIZED');
       }
     }
