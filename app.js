@@ -14,7 +14,7 @@ const port = 3302;
 
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/docs/index.html')));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'docs')));
 app.listen(`${port}`);
 
 console.log(`Server up and ready!\nServer on port ${port}`.green.bold);
