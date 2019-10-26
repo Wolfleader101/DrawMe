@@ -11,9 +11,14 @@ text-align: center;
 }
 
 .CanvasSect {
+  
   background-color: green;
 }
 
 .MainSect {
   margin-left: 25px;
+}
+
+.CaSelect {
+  float: left;
 }
