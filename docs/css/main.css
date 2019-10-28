@@ -19,6 +19,7 @@ text-align: center;
 }
 ::placeholder {
   color: white;
+  text-align: center;
 }
 
 #submitBTN {
