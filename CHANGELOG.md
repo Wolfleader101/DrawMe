@@ -12,6 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix bugs
 - Clean up code
 
+## [0.3.2] - 2019-11-30
+### Removed
+- Removed input_old.js
+
+### Added
+- Fixed typos
+- Refactored some code
+
 ## [0.3.1] - 2019-07-07
 ### Added
 - Circles with colour

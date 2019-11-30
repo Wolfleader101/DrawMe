@@ -2,7 +2,7 @@ const shapes = ['square', 'circle', 'rectangle'];
 
 function DetermineArgument() {
 
-  // Run loop to check all arugments
+  // Run loop to check all arguments
   for(args of UserArgument) {
 
      //check the users shape
@@ -11,7 +11,7 @@ function DetermineArgument() {
 
     } else {
 
-      alert('ERROR USER COMMAND NOT RECOGNIZED')
+      alert('ERROR USER COMMAND NOT RECOGNIZED');
       console.log('ERROR USER COMMAND NOT RECOGNIZED');
     }
   }

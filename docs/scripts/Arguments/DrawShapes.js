@@ -17,7 +17,7 @@ class Square {
   }
 }
 
-class Rectange {
+class Rectangle {
   constructor(colour, x, y, height, width) {
     this.colour = colour;
     this.x = x;
@@ -56,6 +56,6 @@ class Circle {
 
 const ShapeObjects = {
   square: new Square("red", 25, 25, 100, 100),
-  rectangle: new Rectange("blue", 125, 200, 100, 150),
+  rectangle: new Rectangle("blue", 125, 200, 100, 150),
   circle: new Circle("orange", 500, 350, 100, 0, 2)
 };

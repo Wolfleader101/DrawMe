@@ -46,7 +46,7 @@ function SubmitInput() {
     }
    //run the command (e.g Draw the square)
   //Now delete those words from array using  .shift()
-  //Each command needs an argument and aeach argument requires a command otherwise delete
+  //Each command needs an argument and each argument requires a command otherwise delete
   //if the command has another command after it. delete it.
   //loop until no words left.
   }
