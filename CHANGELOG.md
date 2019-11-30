@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix bugs
 - Clean up code
 
+## [0.3.3] - 2019-11-30
+### Added
+- Refactored code
+- Made Shape Class
+
 ## [0.3.2] - 2019-11-30
 ### Removed
 - Removed input_old.js
