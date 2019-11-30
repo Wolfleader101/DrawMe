@@ -28,6 +28,7 @@ class Shape {
 
       //check the users shape
       if (shapes.includes(this.args)) {
+          // Draw the users shape
         ShapeObjects[this.args].Draw();
 
       } else {
