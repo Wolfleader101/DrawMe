@@ -10,7 +10,6 @@ class Square {
     this.width = width;
   }
 
-  //Method
   Draw() {
     Context.fillStyle = this.colour;
     Context.fillRect(this.x, this.y, this.width, this.height);
@@ -26,7 +25,6 @@ class Rectangle {
     this.width = width;
   }
 
-  //Method
   Draw() {
     Context.fillStyle = this.colour;
     Context.fillRect(this.x, this.y, this.width, this.height);
@@ -43,7 +41,6 @@ class Circle {
     this.eAngle = eAngle;
   }
 
-  //Method
   Draw() {
     Context.beginPath();
     Context.arc(this.x, this.y, this.radius, this.sAngle, this.eAngle * Math.PI);
@@ -54,6 +51,8 @@ class Circle {
   }
 }
 
+
+// re write this object class to get input from settings
 const ShapeObjects = {
   square: new Square("red", 25, 25, 100, 100),
   rectangle: new Rectangle("blue", 125, 200, 100, 150),
