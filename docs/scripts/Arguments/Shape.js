@@ -17,7 +17,7 @@ class Shape {
         this.DetermineArgument();
 
       } else {
-        alert(`Error: The User Command ${this.cmd} was not found`);
+        alert(`Error: The User Command ${this.cmd} was not found but passed initial checks`);
         console.log("\n" + `%cError: The User Command ${this.cmd} was not found`, "color: red;");
       }
     }

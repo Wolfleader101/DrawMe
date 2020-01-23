@@ -5,12 +5,13 @@ body {
 
 #Heading {
   text-align: center;
-}
 
-#Heading .subBeta {
-  vertical-align: sub;
-  font-weight: 400;
-  font-size: small;
+  .subBeta {
+    vertical-align: sub;
+    font-weight: 400;
+    font-size: small;
+  }
+
 }
 
 #canvas {
@@ -22,21 +23,7 @@ body {
   background-color: #4c525c;
   border-radius: 25px;
   border: 2px solid #161a21;
-}
 
-::-webkit-input-placeholder {
-  color: white;
-  text-align: center;
-}
-
-:-ms-input-placeholder {
-  color: white;
-  text-align: center;
-}
-
-::-ms-input-placeholder {
-  color: white;
-  text-align: center;
 }
 
 ::placeholder {
@@ -52,12 +39,13 @@ body {
 }
 
 #submitBTN:hover {
-  -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
   background-color: #4c525c;
+
 }
 
 .CanvasSect {
+
   background-color: green;
 }
 
@@ -74,7 +62,6 @@ body {
   margin-left: 2%;
   font-size: 20pt;
   font-weight: bolder;
-  background-image: -webkit-gradient(linear, right top, left top, from(violet), color-stop(indigo), color-stop(blue), color-stop(green), color-stop(yellow), color-stop(orange), to(red));
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   background-clip: text;
   -webkit-background-clip: text;
@@ -83,25 +70,23 @@ body {
 
 .SettingsSect {
   border-top: solid red;
-}
+  h2 {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align: center;
+  }
 
-.SettingsSect h2 {
-  margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 20%;
-  text-align: center;
-}
+  .Objects {
+    float: right;
+    margin-right: 5%;
 
-.SettingsSect .Objects {
-  float: right;
-  margin-right: 5%;
-}
+    h3 {
+      padding-bottom: 5%;
+    }
 
-.SettingsSect .Objects h3 {
-  padding-bottom: 5%;
+    ul {
+      float: left;
+    }
+  }
 }
-
-.SettingsSect .Objects ul {
-  float: left;
-}
-/*# sourceMappingURL=main.css.map */
