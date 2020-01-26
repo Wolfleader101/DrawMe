@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.3.3",
-    "express": "^4.16.4"
+    "express": "^4.17.1"
   },
   "pkg": {
     "assets": [
