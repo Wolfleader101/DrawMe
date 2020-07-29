@@ -35,7 +35,7 @@ class Square extends Rectange {
 }
 
 class Circle extends Shape {
-    constructor(name, colour, x, y, radius) {
+    constructor(name, color, x, y, radius) {
         super(name,color,x,y);
         this.radius = radius;
         this.sAngle = 0;
@@ -54,7 +54,7 @@ class Circle extends Shape {
 }
 
 class SemiCircle extends Circle {
-    constructor(name, colour, x, y, radius) {
+    constructor(name, color, x, y, radius) {
         super(name,color,x,y, radius)
         this.sAngle = 0;
         this.eAngle = 1;
