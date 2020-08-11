@@ -62,6 +62,9 @@ class SemiCircle extends Circle {
         this.sAngle = 0;
         this.eAngle = 1;
     }
+    Draw() {
+        super.Draw();
+    }
 }
 
 // re write this object class to get input from settings
@@ -69,5 +72,5 @@ const ShapeObjects = {
     square: new Square("square","red", 25, 25, 100, 100),
     rectangle: new Rectangle("rectangle", "blue", 125, 200, 100, 150),
     circle: new Circle("circle","orange", 500, 350, 100, 0, 2),
-    semiCircle: new SemiCircle("awesome", "brown", 25,25,20)
+    semicircle: new SemiCircle("awesome", "brown", 25,25,20)
 };

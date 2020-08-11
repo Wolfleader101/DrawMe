@@ -1,6 +1,9 @@
 class DetermineShape {
-  cmd;
-  args;
+
+  constructor(cmd, args) {
+    this.cmd = cmd;
+    this.args = args;
+  }
 
   DetermineCommand() {
     // Run loop until all commands done

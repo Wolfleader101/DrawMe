@@ -38,7 +38,7 @@ function SubmitInput() {
   console.log(UserArgument); 
 
   // run code to determine shape
-  let d = new DetermineShape();
+  let d = new DetermineShape(Usercmds, UserArgument);
   d.DetermineCommand();
 
    //run the command (e.g Draw the square)
