@@ -13,7 +13,7 @@ class Shape {
 
 }
 
-class Rectange extends Shape {
+class Rectangle extends Shape {
     
     constructor(name,color,x,y,height,width) {
         super(name,color,x,y);
@@ -27,7 +27,7 @@ class Rectange extends Shape {
     }
 }
 
-class Square extends Rectange {
+class Square extends Rectangle {
     constructor(name,color,x,y,size) {
         super(name,color,x,y,size,size);
         
@@ -62,7 +62,7 @@ class SemiCircle extends Circle {
 }
 
 let a = new Shape("object1","blue",10,10);
-let b = new Rectange("myRectangle", "red", 50,50, 500, 500)
+let b = new Rectangle("myRectangle", "red", 50,50, 500, 500)
 let c = new Square("Squares","yellow",100,100, 200)
 let d = new Circle("owo", "green", 15,15,20)
 let e = new SemiCircle("awesome", "brown", 25,25,20)
