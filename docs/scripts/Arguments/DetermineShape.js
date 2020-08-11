@@ -1,4 +1,4 @@
-class Shape {
+class DetermineShape {
   cmd;
   args;
 

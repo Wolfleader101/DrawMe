@@ -1,3 +1,6 @@
+const canvas = document.getElementById('canvas');
+const Context = ctx = canvas.getContext('2d');
+
 class Shape {
     constructor(name,color, x, y) {
         this.name = name;
@@ -61,8 +64,10 @@ class SemiCircle extends Circle {
     }
 }
 
-let a = new Shape("object1","blue",10,10);
-let b = new Rectangle("myRectangle", "red", 50,50, 500, 500)
-let c = new Square("Squares","yellow",100,100, 200)
-let d = new Circle("owo", "green", 15,15,20)
-let e = new SemiCircle("awesome", "brown", 25,25,20)
+// re write this object class to get input from settings
+const ShapeObjects = {
+    square: new Square("square","red", 25, 25, 100, 100),
+    rectangle: new Rectangle("rectangle", "blue", 125, 200, 100, 150),
+    circle: new Circle("circle","orange", 500, 350, 100, 0, 2),
+    semiCircle: new SemiCircle("awesome", "brown", 25,25,20)
+};

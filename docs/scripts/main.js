@@ -1,18 +1,17 @@
 // Defined so other scripts can access these variables
 var UserArgument;
 var Usercmds;
-var shapes;
 var commands;
+
+// All 2d shapes
+const shapes = ['square', 'circle', 'rectangle', 'semicircle'];
 
 function SubmitInput() {
   let Input = document.getElementById("DrawInput").value;
   Input = Input.toLowerCase();
 
   // create variable with combines create and destroy arrays
-  var commands = Create.concat(Destroy);
-
-  // All 2d shapes
-  shapes = ['square', 'circle', 'rectangle'];
+  const commands = Create.concat(Destroy);
 
   // create acceptedWords variable that combines the shapes and commands array
   const acceptedWords = commands.concat(shapes);
@@ -38,9 +37,9 @@ function SubmitInput() {
   console.log("\n" + "%cThe User's Arguments", "color: aqua;");
   console.log(UserArgument); 
 
-  // Get shape class
-  let shape = new Shape();
-  shape.DetermineCommand();
+  // run code to determine shape
+  let d = new DetermineShape();
+  d.DetermineCommand();
 
    //run the command (e.g Draw the square)
   //Now delete those words from array using  .shift()
@@ -48,4 +47,3 @@ function SubmitInput() {
   //if the command has another command after it. delete it.
   //loop until no words left.
   }
- 
